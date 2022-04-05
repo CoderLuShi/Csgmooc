@@ -50,8 +50,8 @@ public class Login {
         httpPost.setURI(URI.create(loginUri));
         //构造请求参数
         JSONObject params = new JSONObject();
-        params.put("username","2020201308");
-        params.put("password","200204210918");
+        params.put("username","学号");
+        params.put("password","密码");
         params.put("schoolNum","GWNH9iO0ts0=");
         try {
             //设置请求参数

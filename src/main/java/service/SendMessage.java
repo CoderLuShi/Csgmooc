@@ -16,10 +16,10 @@ public class SendMessage {
     public int send(String message) {
         int statusCode=1;
         CloseableHttpClient client = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("http://82.156.52.129:5600/send_group_msg");
+        HttpPost httpPost = new HttpPost("http://IP:5600/send_group_msg");
         //构造请求参数
         JSONObject params = new JSONObject();
-        params.put("group_id", "620763398");
+        params.put("group_id", "群号");
         params.put("message", message);
         try {
             //设置请求参数,设置Charset.forName("UTF-8")避免中文请求乱码
